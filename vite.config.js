@@ -8,6 +8,6 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    valetTls: 'penzest.code',
+    valetTls: 'penzee.code',
     refresh: true,
 });
