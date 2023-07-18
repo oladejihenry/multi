@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\Tenant\Auth\RegisteredTenantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 
 //New Tenant Registration Routes
+Route::get('/register', [RegisteredTenantController::class, 'create']);
