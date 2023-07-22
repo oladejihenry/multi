@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 
 //New Tenant Registration Routes
-Route::get('/register', [RegisteredTenantController::class, 'create']);
+Route::get('/register', [RegisteredTenantController::class, 'create'])->name('tenantRegister');
+Route::post('/register', [RegisteredTenantController::class, 'store']);
